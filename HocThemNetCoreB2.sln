@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30413.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HocThemNetCoreB2", "HocThemNetCoreB2.csproj", "{C6D1EB55-411F-4FD1-AA53-F92A6A757313}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6D1EB55-411F-4FD1-AA53-F92A6A757313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6D1EB55-411F-4FD1-AA53-F92A6A757313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6D1EB55-411F-4FD1-AA53-F92A6A757313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6D1EB55-411F-4FD1-AA53-F92A6A757313}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA22E73D-7FDE-42FD-8229-C55DF4F84D9E}
+	EndGlobalSection
+EndGlobal
