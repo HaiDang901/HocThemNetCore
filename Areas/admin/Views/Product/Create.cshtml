@@ -1,0 +1,40 @@
+﻿@model HocThemNetCoreB2.Models.ProductModel
+@{
+    ViewData["Title"] = "Create";
+    //Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h1 class="h3 mb-2 text-gray-800"> Danh sách  sản phẩm / Thêm sản phẩm </h1>
+@using (Html.BeginForm("Create", "Product", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="form-data">
+        <label> Name </label>
+        @Html.TextBoxFor(m => m.ProductName, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.ProductName, null, new { @class = "validate" })
+    </div>
+    <div class="form-data">
+        <label> Mã Sản Phẩm </label>
+        @Html.TextBoxFor(m => m.Code, new {  @class = "form-control", @maxlength = 3 })
+        @Html.ValidationMessageFor(model => model.Code, null, new { @class = "validate" })
+    </div>
+    <div class="form-data">
+        <label> Danh mục Sản Phẩm  </label>
+        @Html.DropDownListFor(m => m.CategoryID,Model.lstcategory,  new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.ProductName, null, new { @class = "validate" })
+    </div>
+    <div class="form-data">
+        <label> Giá cũ  </label>
+        @Html.TextBoxFor(m => m.UnitPrice, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.UnitPrice, null, new { @class = "validate" })
+    </div>
+    <div class="form-data">
+        <label> Giá Mới </label>
+        @Html.TextBoxFor(m => m.UnitPriceNew, new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.UnitPriceNew, null, new { @class = "validate" })
+    </div>
+   <button type="submit" class="btn btn-primary">
+       Submit
+   </button>
+}

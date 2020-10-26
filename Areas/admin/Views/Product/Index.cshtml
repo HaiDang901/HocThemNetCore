@@ -1,0 +1,64 @@
+﻿@model List<HocThemNetCoreB2.Models.Product>
+@{
+    ViewData["Title"] = "Product Index";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+
+<h1>
+    @TempData["StatusMessage"]
+
+</h1>
+<p>
+    @*@item.StudentId -@item.Name*@
+
+</p>
+<h1 class="h3 mb-2 text-gray-900"> Danh sách sản phẩm </h1>
+<div class=" row float-right">
+    <a class="btn btn-success" href="/admin/product/create"> <i class="fa fa-plus"></i> Tạo Mới </a>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>STT</th>
+            <th scope="col">CategoryID</th>
+            <th scope="col">Tên Sản Phẩm</th>
+            <th>Hình Ảnh</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Giá Mới</th>
+            <th scope="col">Mô tả</th>
+            <th scope="col">Public </th>
+            <th> Thao tác </th>
+        </tr>
+    </thead>
+    <tbody>
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <tr>
+                <td>@(i+1)</td>
+                <td>@Model[i].CategoryID</td>
+                <td>@Model[i].ProductName</td>
+                <td>
+                    <img src="~/images/Product/@Model[i].ImagePath" style="width:100px; height: 100px;" />
+                </td>
+                <td>@Model[i].UnitPrice</td>
+                <td>@Model[i].UnitPriceNew</td>
+                <td>@Model[i].Description</td>
+                <td>
+                    @if (Model[i].Published == true)
+                    {
+                        <i class="fa fa-check"></i>
+                    }
+                </td>
+                <td>
+
+                    <a href="/admin/product/edit" class="btn btn-info"><i class="fa fa-edit"></i></a>
+                    <a href="/admin/product/delete" class="btn btn-danger"><i class="fa fa-recycle"></i></a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

@@ -20,7 +20,21 @@ namespace HocThemNetCoreB2.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.ThongBao = " Đây là gì ";
+            ViewData["Thongbao"] = "Đây cũng là thông báo nha ";
+
+            ViewBag.Product = new Student()
+            {
+                StudentId = 1,
+                Name = "Nguyễn Hải Đăng",
+            };
+            ViewData["Student"] = new Student()
+            {
+                StudentId = 1,
+                Name = "Đặng Thị Hoa",
+            };
             return View();
+
         }
 
         public IActionResult Privacy()

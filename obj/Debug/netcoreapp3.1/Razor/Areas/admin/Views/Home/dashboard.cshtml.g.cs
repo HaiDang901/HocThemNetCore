@@ -12,7 +12,22 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\haida\OneDrive\Máy tính\Học Them DotNetCore( aViet)\HocThemNetCoreB2\Areas\admin\Views\_ViewImports.cshtml"
+using HocThemNetCoreB2;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\haida\OneDrive\Máy tính\Học Them DotNetCore( aViet)\HocThemNetCoreB2\Areas\admin\Views\_ViewImports.cshtml"
+using HocThemNetCoreB2.Models;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"2bd04a07957a2bca6a881352ddbc7c9bb81f17a1", @"/Areas/admin/Views/Home/dashboard.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"8bb9f994d510ddefae944cbbd37ee41a0ea03885", @"/Areas/admin/Views/_ViewImports.cshtml")]
     public class Areas_admin_Views_Home_dashboard : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998
